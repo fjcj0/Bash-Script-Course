@@ -1,23 +1,9 @@
 #!/bin/bash
-let number=400
-if [ $number -gt 200 ];
-then
-if [ "$number" -gt 200 ] && [ "$number" -lt 500 ]; 
-then 
-echo "The condition is true"
+number=300
+if [ "$number" -lt 200 ]; then
+    echo "Number is less than 200"
+elif [ "$number" -eq 300 ]; then
+    echo "Number is equal to 300"
 else
-echo "The condition is false"
-fi
-fi
-
-if [ "$number" -gt 200 ] || [ "$number" -eq 300 ]; then
-    echo "One of condition is true"
-else
-    echo "none of them is true"
-fi
-
-if [ "$number" -gt 500 ] || [ "$number" -eq 300 ]; then
-    echo "One of condition is true"
-else
-    echo "none of them is true"
+    echo "Number is greater than 200 but not 300"
 fi
