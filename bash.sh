@@ -1,6 +1,6 @@
 #!/bin/bash
-number=200
-if [ ! $number -eq 200 ]
+number=300
+if [ $number -ne 200 ]
 then
 echo "The condition is true"
 else
