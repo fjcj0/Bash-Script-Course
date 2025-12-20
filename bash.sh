@@ -1,7 +1,7 @@
 #!/bin/bash
-pwd
-my_name="Jay"
-my_age="40"
-echo "Hello my name is $my_name, I'm $my_age Years Old"
-now=$(date)
-echo $now
+sum=$((10 + 20))
+echo $sum
+let new_sum=sum+50
+echo $new_sum  
+let final_sum=$((sum+100))
+echo $final_sum
