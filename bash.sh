@@ -1,9 +1,8 @@
 #!/bin/bash
-number=300
-if [ "$number" -lt 200 ]; then
-    echo "Number is less than 200"
-elif [ "$number" -eq 300 ]; then
-    echo "Number is equal to 300"
+a=1
+b=0
+if (( a ^ b )); then
+    echo "XOR is true"
 else
-    echo "Number is greater than 200 but not 300"
+    echo "XOR is false"
 fi
