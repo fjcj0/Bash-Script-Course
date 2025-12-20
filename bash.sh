@@ -1,14 +1,7 @@
 #!/bin/bash
-number=300
-if [ $number -gt 200 ]
-then
-echo "The condition is true"
-else
-echo "The condition is false"
-fi
-if [ $number -lt 200 ]
-then
-echo "The condition is true"
-else
-echo "The condition is false"
+if [ -f ./bash.sh ]
+then 
+echo "This file exist"
+else 
+echo "This file not exist"
 fi
