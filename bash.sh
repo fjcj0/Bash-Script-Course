@@ -6,3 +6,4 @@ if (( a ^ b )); then
 else
     echo "XOR is false"
 fi
+echo $?
