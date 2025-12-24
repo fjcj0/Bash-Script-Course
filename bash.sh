@@ -1,14 +1,13 @@
 #!/bin/bash
-i=0
-while [ $i -ne 11 ]
+for current_number in 1 2 3 4 5 6 7 8 9 10
 do
-echo $i
-i=$(($i+1))
-sleep 0.5
+    echo $current_number
+    sleep 0.5
 done
-while [ -d test ]
+echo "This is outside of the for loop"
+for current_number in {1..10}
 do
- echo "The test file exists"
- sleep 0.5
+    echo $current_number
+    sleep 0.5
 done
-echo "The file no longer exist"
+echo "This is outside of the for loop"
