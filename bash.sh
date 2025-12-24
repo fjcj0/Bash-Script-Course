@@ -1,3 +1,4 @@
 #!/bin/bash
-find files/ -type f
-find files/ -type d
+files=("logfile.log" "errorfile.log")
+mkdir -p files
+sudo apt update 1> "files/${files[0]}" 2> "files/${files[1]}"
