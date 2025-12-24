@@ -1,8 +1,6 @@
 #!/bin/bash
-print_hello() {
-    for i in {1..10}
-    do
-        mkdir files/"${i}"
-    done
+add_two_num() {
+  local sum=$(($1 + $2)) 
+  echo "Sum of $1 and $2 is $sum"
 }
-print_hello
+add_two_num 2 3
