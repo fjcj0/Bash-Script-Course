@@ -1,13 +1,5 @@
 #!/bin/bash
-for current_number in 1 2 3 4 5 6 7 8 9 10
+for file in logfiles/*.log
 do
-    echo $current_number
-    sleep 0.5
+ tar -czvf $file.tar.gz $file
 done
-echo "This is outside of the for loop"
-for current_number in {1..10}
-do
-    echo $current_number
-    sleep 0.5
-done
-echo "This is outside of the for loop"
